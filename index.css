@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  /* padding: 0rem 20rem; */
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e9e9e9;
+  padding: 2rem 20rem;
+  color: #353535;
+}
+
+/* Book Store title */
+.navbar p {
+  font-size: 24px;
+  margin: 0;
+  color: #353535;
+  font-weight: bold;
+}
+
+/* Center search container */
+.search-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+/* Style the search input */
+#search-input {
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  width: 50%;
+}
+
+/* List item styling */
+.list-item {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.list-item li {
+  color: #353535;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* List item hover effect */
+.list-item li:hover {
+  text-decoration: underline;
+}
+
+.filter-container {
+  width: 10%;
+  background-color: #fff;
+  padding: 10px;
+  margin: 10px 0 0 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Label styling */
+.filter-container label {
+  font-size: 18px;
+  color: #333;
+  margin-right: 10px;
+}
+
+/* Custom dropdown styling */
+.custom-dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.custom-dropdown select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #333;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+/* Dropdown hover and focus state */
+.custom-dropdown select:hover,
+.custom-dropdown select:focus {
+  border-color: #333;
+}
+
+/* List Styling */
+.list {
+  padding: 2rem 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Card styling */
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  flex-basis: 19%;
+  max-width: 19%;
+  margin: 10px 0;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Book cover image */
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Card content styling */
+.card-content {
+  padding: 10px;
+  /* text-align: center; */
+}
+
+/* Title styling */
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  color: #333;
+}
+
+/* Author styling */
+.card-author {
+  font-size: 16px;
+  color: #555;
+  margin: 10px 0;
+}
+
+.card-author span {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Genre styling */
+.card-genre {
+  font-size: 14px;
+  color: #777;
+  margin: 5px 0;
+}
+
+.card-genre span {
+  color: #333;
+}
+
+/* ID styling */
+.card-id {
+  font-size: 14px;
+  color: #777;
+}
+
+.card-id span {
+  color: #333;
+  font-weight: bold;
+}
+
+/* Pagination container styling */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 10px 15px;
+  margin: 0 5px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.pagination button.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.pagination button:disabled {
+  background-color: #e9ecef;
+  cursor: not-allowed;
+}

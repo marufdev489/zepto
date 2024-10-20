@@ -1,0 +1,51 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Book Store</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Navbar section -->
+      <nav class="navbar">
+        <p>Book Store</p>
+        <div class="search-container">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search..."
+            onkeyup="searchFunction()"
+          />
+        </div>
+        <ul class="list-item">
+          <li>Home</li>
+          <li>Wishlist</li>
+        </ul>
+      </nav>
+
+      <!-- Filter Section -->
+      <div class="filter-container">
+        <label for="filter-dropdown">Filter by:</label>
+        <div class="custom-dropdown">
+          <select id="filter-dropdown" onchange="filterFunction()">
+            <option value="all">Genre</option>
+            <option value="fiction">Fiction</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- List section -->
+      <div class="list" id="list"></div>
+
+      <!-- Pagination section-->
+      <div class="pagination" id="pagination"></div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
